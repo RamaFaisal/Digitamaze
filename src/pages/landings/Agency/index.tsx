@@ -7,10 +7,11 @@ import Services from './Services';
 import Portfolios from './Portfolio';
 import Clients from './Clients';
 import Vacancies from './Vacancies';
+import Blog from './Blog';
 import Footer from './Footer';
 
 // dummy data
-import { jobDetails, services } from './data';
+import { blogPosts, jobDetails, services } from './data';
 import { projects } from '../Portfolio/data';
 
 const Agency = () => {
@@ -33,6 +34,8 @@ const Agency = () => {
 
             {/* opening */}
             <Vacancies jobDetails={jobDetails} />
+            
+            {/* <Blog blogs={blogPosts}/> */}
 
             {/* footer */}
             <Footer />

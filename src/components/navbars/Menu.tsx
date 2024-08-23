@@ -23,9 +23,9 @@ const Menu = ({ navClass, buttonClass, showDownload, loggedInUser }: MenuProps) 
     return (
         <Nav as="ul" className={classNames('align-items-lg-center', navClass)}>
             <Nav.Item as="li">
-                <NavLink to="/home" end className={classNames('nav-link', ({ ...isActive }) => isActive && 'active')}>
+                <a href="/home" className="nav-link btn me-2 shadow-none">
                     Home
-                </NavLink>
+                </a>
             </Nav.Item>
 
             <Nav.Item as="li">
@@ -37,6 +37,12 @@ const Menu = ({ navClass, buttonClass, showDownload, loggedInUser }: MenuProps) 
             <Nav.Item as="li">
                 <a href="#portfolio" className="nav-link btn me-2 shadow-none">
                     Portfolio
+                </a>
+            </Nav.Item>
+
+            <Nav.Item as="li">
+                <a href="/blog" className="nav-link btn me-2 shadow-none">
+                    Blog
                 </a>
             </Nav.Item>
 

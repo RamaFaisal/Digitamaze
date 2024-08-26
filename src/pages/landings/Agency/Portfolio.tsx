@@ -27,7 +27,7 @@ const Portfolios = ({ portfolios }: PortfolioProps) => {
                     {(portfolios || []).map((portfolio, index) => {
                         return (
                             <Col lg={6} key={index.toString()}>
-                                <div className="bg-gray-50 ps-5 pt-5 mt-4 mt-sm-5 rounded feature-item">
+                                <div className="bg-gray-50 pt-5 mt-4 mt-sm-5 rounded feature-item">
                                     <Row className="align-items-center">
                                         <Col xs="auto">
                                             <h3 className="text-dark my-0">{portfolio.title}</h3>

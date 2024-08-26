@@ -7,7 +7,6 @@ import Services from './Services';
 import Portfolios from './Portfolio';
 import Clients from './Clients';
 import Vacancies from './Vacancies';
-import Blog from './Blog';
 import Footer from './Footer';
 
 // dummy data
@@ -34,8 +33,6 @@ const Agency = () => {
 
             {/* opening */}
             <Vacancies jobDetails={jobDetails} />
-            
-            {/* <Blog blogs={blogPosts}/> */}
 
             {/* footer */}
             <Footer />

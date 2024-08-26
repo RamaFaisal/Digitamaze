@@ -36,9 +36,16 @@ const Clients = () => {
                         <Row className="mt-5">
                             {(brands || []).map((brand, index) => {
                                 return (
-                                    <Col key={index.toString()}>
-                                        <img src={brand} alt="brand" height="32" className="mb-2 mb-xl-0" />
-                                    </Col>
+                                        <Col className="d-block d-md-none" key={index.toString()}>
+                                            <img src={brand} alt="brand" height="16" className="mb-2 mb-xl-0" />
+                                        </Col>
+                                );
+                            })}
+                            {(brands || []).map((brand, index) => {
+                                return (
+                                        <Col className="d-none d-md-block" key={index.toString()}>
+                                            <img src={brand} alt="brand" height="32" className="mb-2 mb-xl-0" />
+                                        </Col>
                                 );
                             })}
                         </Row>
